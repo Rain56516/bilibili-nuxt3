@@ -29,7 +29,7 @@ https://nuxt3-bilibili.vercel.app/ (备用)
 - 自动导入
 - Nuxt DevTools 调试工具
 - 自定义组件
-- @vant/nuxt  组件库
+- @vant/nuxt 组件库
 - 移动端 vw 适配
 - 接口服务器
 - 数据获取
@@ -40,7 +40,7 @@ https://nuxt3-bilibili.vercel.app/ (备用)
 ## 演示环境
 
 - **电脑系统** - Windows 10
-- **开发工具** - VS Code (需按照 Volar 扩展插件)
+- **开发工具** - VS Code (需安装 Volar 扩展插件)
 - **Node.js** - v16.15.0
 - **Npm** - 9.4.0
 - **Nuxt** - 3.6.5
@@ -103,7 +103,7 @@ C:\Windows\System32\drivers\etc
 **Nuxt 框架优势**
 
 - Nuxt 采用了**混合的架构模式**，同时支持 SSR 和 SPA。
--  SSR 服务端渲染： 首次访问页面 ，Nuxt.js 在服务器端执行 Vue 组件的渲染过程，并生成初始 HTML。
+- SSR 服务端渲染： 首次访问页面 ，Nuxt.js 在服务器端执行 Vue 组件的渲染过程，并生成初始 HTML。
 - SPA 客户端激活：一旦初始 HTML 被发送到浏览器，Vue.js 会接管页面，后续的页面切换则使用 SPA 的方式进行。
 - Nuxt 框架优势：**兼顾了 SSR 和 SPA 的优点**。
 
@@ -294,7 +294,7 @@ export default defineNuxtConfig({
 
 拷贝素材中的 `assets` 目录项目中，包含项目所需的图片、基础样式、字体图标。
 
-下载安装 sass 
+下载安装 sass
 
 ```sh
 npm i sass -D
@@ -468,7 +468,7 @@ npm i sass -D
 
 - **视频组件** `components/AppVideo.vue`
 
-抽离到  `components` 目录的组件可自动导入，在首页、视频详情页中直接使用即可，页面也变得更简洁。
+抽离到 `components` 目录的组件可自动导入，在首页、视频详情页中直接使用即可，页面也变得更简洁。
 
 ```vue
 <template>
@@ -493,13 +493,13 @@ npm i sass -D
 
 Nuxt 支持在 `server` 目录写服务器接口，用于数据请求。
 
-为了让大家更好地了解 Nuxt 接口服务器，我们仅提供了静态数据，但这个 `server` 目录可以用于对接数据库等更复杂的操作。这样，您可以通过编写自定义的服务器接口来满足项目的需求。 
+为了让大家更好地了解 Nuxt 接口服务器，我们仅提供了静态数据，但这个 `server` 目录可以用于对接数据库等更复杂的操作。这样，您可以通过编写自定义的服务器接口来满足项目的需求。
 
 ### 频道接口
 
 **静态数据**
 
- `database/chnnel.ts`
+`database/chnnel.ts`
 
 ```ts
 // 频道列表
@@ -576,7 +576,7 @@ const { data: channelList } = await useFetch('/api/channel')
 
 **静态数据**
 
- `database/video.ts`
+`database/video.ts`
 
 ```ts
 // 视频列表
@@ -709,8 +709,6 @@ v-for 循环展示
   </NuxtLink>
 </div>
 ```
-
-
 
 参考链接：
 
