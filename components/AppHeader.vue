@@ -5,6 +5,7 @@
   <header class="app-header">
     <NuxtLink class="logo" to="/">
       <i class="iconfont Navbar_logo"></i>
+      <span class="copyright">Yuzm</span>
     </NuxtLink>
     <a class="search" href="#">
       <i class="iconfont ic_search_tab"></i>
@@ -25,6 +26,11 @@
   background-color: #fff;
   .logo {
     flex: 1;
+    .copyright {
+      color: #fb7299;
+      font-size: 12px;
+      margin-left: 4px;
+    }
     .Navbar_logo {
       color: #fb7299;
       font-size: 28px;

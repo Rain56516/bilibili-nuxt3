@@ -3,7 +3,8 @@ import type { VideoItem } from '@/types/video'
 // get  /api/channel
 
 // 通过 useFetch 获取频道列表数据，data 是响应式数据，可以直接用于界面渲染
-const { data: channelList } = await useFetch('/api/channel')
+// useFetch默认是 GET 请求
+const { data: channelList } = await useFetch('/api/channel',{ method: 'GET' })
 
 // 获取视频列表数据
 const { data: videoList } = await useFetch('/api/video')
